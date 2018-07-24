@@ -5,3 +5,6 @@
 
 cadena = 'Hola Mundo!'
 caracter = 'o'
+
+prueba = cadena.include?(caracter)
+puts prueba

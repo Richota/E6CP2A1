@@ -9,4 +9,27 @@
 # 5. Utilizando un arreglo vacío auxiliar y operaciones de push y pop:
 #    invertir el orden de los elementos en un arreglo.
 
-a = [1,2,3,9,1,4,5,2,3,6,6]
+a = [1, 2, 3, 9, 1, 4, 5, 2, 3, 6, 6]
+
+print a
+print "\n"
+a.pop # elimina el ultimo valor
+print a
+print "\n"
+a.shift # me elimina el primer valor
+print a
+print "\n"
+a.delete_at(a.length / 2) if a.length.odd?
+print a
+print "\n"
+a.delete_at(a.length / 2 - 1) if a.length.even?
+print a
+print "\n"
+a.delete_at(a.length - 1) if a.last != 1
+print a
+print "\n"
+b = []
+a.reverse.each do |item|
+  b.push item
+end
+print b
